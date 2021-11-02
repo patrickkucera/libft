@@ -6,7 +6,7 @@
 /*   By: pakucera <pakucera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 13:12:49 by pakucera          #+#    #+#             */
-/*   Updated: 2021/11/02 14:42:36 by pakucera         ###   ########.fr       */
+/*   Updated: 2021/11/02 16:05:31 by pakucera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,5 @@ size_t	ft_strlen(const char *s)
 	{
 		i++;
 	}
- 	return	(i);
+	return (i);
 }
