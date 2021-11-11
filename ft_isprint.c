@@ -6,15 +6,15 @@
 /*   By: pakucera <pakucera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 14:31:17 by pakucera          #+#    #+#             */
-/*   Updated: 2021/11/02 14:53:12 by pakucera         ###   ########.fr       */
+/*   Updated: 2021/11/11 14:32:28 by pakucera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
-	if (c >= 032 && c <= 127)
+	if (c >= 32 && c <= 126)
 	{
 		return (1);
 	}

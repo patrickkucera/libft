@@ -6,11 +6,11 @@
 /*   By: pakucera <pakucera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 14:15:16 by pakucera          #+#    #+#             */
-/*   Updated: 2021/11/02 14:55:02 by pakucera         ###   ########.fr       */
+/*   Updated: 2021/11/11 14:02:24 by pakucera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {
