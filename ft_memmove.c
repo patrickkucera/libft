@@ -6,7 +6,7 @@
 /*   By: pakucera <pakucera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 16:37:46 by pakucera          #+#    #+#             */
-/*   Updated: 2021/11/16 17:00:34 by pakucera         ###   ########.fr       */
+/*   Updated: 2021/11/16 18:22:34 by pakucera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,18 +20,23 @@
 
 ** VALEUR RENVOYÉE
 ** La fonction memmove() renvoie un pointeur sur dest.  
+
 */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t len)
 {
-	
-	{
-		while (n)
-		{
-			
-		}
-	}
+	unsigned char		*ptr1;
+	const unsigned char	*ptr2;
+
+	ptr1 = (unsigned char *)dest;
+	ptr2 = (unsigned char *)src;
+	if (ptr2 < ptr1)
+		while (len--)
+			ptr1[len] = ptr2[len];
+	else
+		while (len-- > 0)
+			*(ptr1++) = *(ptr2++);
 	return (dest);
 }
