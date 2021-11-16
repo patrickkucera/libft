@@ -6,9 +6,18 @@
 /*   By: pakucera <pakucera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 08:55:50 by pakucera          #+#    #+#             */
-/*   Updated: 2021/11/16 09:18:48 by pakucera         ###   ########.fr       */
+/*   Updated: 2021/11/16 17:02:05 by pakucera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* 
+** DESCRIPTION
+** La fonction memset() remplit les n premiers octets 
+de la zone mémoire pointée par savec l'octet c
+
+** VALEUR RENVOYÉE
+** La fonction memset() renvoie un pointeur sur la zone mémoire s.
+*/
 
 #include "libft.h"
 

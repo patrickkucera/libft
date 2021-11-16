@@ -6,9 +6,19 @@
 /*   By: pakucera <pakucera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 14:37:41 by pakucera          #+#    #+#             */
-/*   Updated: 2021/11/11 14:02:23 by pakucera         ###   ########.fr       */
+/*   Updated: 2021/11/16 16:57:55 by pakucera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** DESCRIPTION
+** Vérifie si l'on a un caractère alphanumérique. 
+** C'est équivalent à (isalpha(c) || isdigit(c)).
+
+** VALEUR RENVOYÉE
+** Les valeurs renvoyées sont non nulles si le caractère c 
+** entre dans la catégorie testée, et zéro sinon  
+*/
 
 #include "libft.h"
 
