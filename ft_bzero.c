@@ -1,37 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pakucera <pakucera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/02 13:12:49 by pakucera          #+#    #+#             */
-/*   Updated: 2021/11/17 14:50:05 by pakucera         ###   ########.fr       */
+/*   Created: 2021/11/17 14:18:37 by pakucera          #+#    #+#             */
+/*   Updated: 2021/11/17 14:42:39 by pakucera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 ** NOM
-** strlen - Calculer la longueur d'une chaîne de caractères
+** bzero - Écrire des octets de valeur zéro dans un bloc d'octets  
 **
 ** DESCRIPTION
-** La fonction strlen() calcule la longueur de la chaîne de caractères s, 
-** sans compter l'octet nul « \0 » final.
-
+** La fonction bzero() met à 0 (octets contenant « \0 ») 
+** les n premiers octets du bloc pointé par s. 
+** 
 ** VALEUR RENVOYÉE
-** La fonction strlen() renvoie le nombre de caractères dans la chaîne s.  
+** Aucune
 */
 
-#include <string.h>
+#include "libft.h"
 
-size_t	ft_strlen(const char *s)
+void	ft_bzero(void *s, size_t n)
 {
-	size_t	i;
+	unsigned char	*d;
 
-	i = 0;
-	while (s[i])
+	d = (unsigned char *)s;
+	while (n-- > 0)
 	{
-		i++;
+		*d = '\0';
+		d++;
 	}
-	return (i);
 }

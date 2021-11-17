@@ -1,37 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pakucera <pakucera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/02 13:12:49 by pakucera          #+#    #+#             */
-/*   Updated: 2021/11/17 14:50:05 by pakucera         ###   ########.fr       */
+/*   Created: 2021/11/17 12:11:42 by pakucera          #+#    #+#             */
+/*   Updated: 2021/11/17 14:48:44 by pakucera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** NOM
-** strlen - Calculer la longueur d'une chaîne de caractères
-**
 ** DESCRIPTION
-** La fonction strlen() calcule la longueur de la chaîne de caractères s, 
-** sans compter l'octet nul « \0 » final.
-
-** VALEUR RENVOYÉE
-** La fonction strlen() renvoie le nombre de caractères dans la chaîne s.  
 */
 
-#include <string.h>
+#include "libft.h"
 
-size_t	ft_strlen(const char *s)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
+	char	*s;
+	size_t	len_dst;
+	size_t	res;
+	size_t	len_src;
 	size_t	i;
 
+	s = (char *)src;
+	len_dst = ft_strlen(dst);
+	len_src = ft_strlen(s);
+	res = 0;
 	i = 0;
-	while (s[i])
+	if (size > len_dst)
+		res = len_src + len_dst;
+	else
+		res = len_src + size;
+	while (s[i] && (len_dst + 1) < size)
 	{
+		dst[len_dst] = s[i];
+		len_dst++;
 		i++;
 	}
-	return (i);
+	dst[len_dst] = '\0';
+	return (res);
 }

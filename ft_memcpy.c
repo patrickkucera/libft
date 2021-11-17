@@ -6,7 +6,7 @@
 /*   By: pakucera <pakucera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 08:52:39 by pakucera          #+#    #+#             */
-/*   Updated: 2021/11/16 17:58:57 by pakucera         ###   ########.fr       */
+/*   Updated: 2021/11/17 12:09:22 by pakucera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,22 +36,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t len)
 	}
 	return (dest);
 }
-
-/*
-** MA VERSION
-
-#include "libft.h"
-
-void	*ft_memcpy(void *dest, const void *src, size_t n)
-{
-	char	*str;
-
-	str = dest;
-	while (n)
-	{
-		*str = src;
-		str++;
-		n--;
-	}
-	return (dest);
-}*/
