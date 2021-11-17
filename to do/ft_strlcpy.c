@@ -5,12 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: pakucera <pakucera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/17 13:56:06 by pakucera          #+#    #+#             */
-/*   Updated: 2021/11/17 13:56:49 by pakucera         ###   ########.fr       */
+/*   Created: 2021/11/17 16:39:58 by pakucera          #+#    #+#             */
+/*   Updated: 2021/11/17 16:40:39 by pakucera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	strlcpy(char * restrict dst, const char * restrict src, size_t dstsize)
-{
-	
-}
+/*
+**
+**
+**
+*/
+
+

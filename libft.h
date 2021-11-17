@@ -6,7 +6,7 @@
 /*   By: pakucera <pakucera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 13:40:50 by pakucera          #+#    #+#             */
-/*   Updated: 2021/11/17 15:46:22 by pakucera         ###   ########.fr       */
+/*   Updated: 2021/11/17 16:39:17 by pakucera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,13 @@ void	*ft_memset(void *s, int c, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t len);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 void	*ft_memchr(const void *s, int c, size_t n);
+char	*ft_strrchr(char const *str, int c);
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
+int		ft_strncmp(char *s1, char *s2, unsigned int n);
+char	*ft_strchr(const char *str, int c);
+char	*ft_strnstr(const char *str, const char *to_find, size_t len);
 size_t	ft_strlen(const char *s);
 int		ft_toupper(int c);
 int		ft_tolower(int ch);
