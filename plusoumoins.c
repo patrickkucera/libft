@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   plusoumoins.c                                      :+:      :+:    :+:   */
+/*   minus.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pakucera <pakucera@student.42.fr>          +#+  +:+       +#+        */
+/*   By: patrickkucera <patrickkucera@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 15:11:09 by pakucera          #+#    #+#             */
-/*   Updated: 2021/11/24 18:01:12 by pakucera         ###   ########.fr       */
+/*   Updated: 2021/11/25 17:18:42 by patrickkuce      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ int main (int argc, char** argv)
 {
     int		NombreMystere = 0, NombreSaisi = 0;
     char	ContinuePartie = 'y';
-	int		nombredecoup = 0;
-	const	char Yes = 'y', No = 'n';
 	const	int MAX = 100, MIN = 1;
     
 	// Génération du nombre aléatoire
@@ -44,8 +42,6 @@ int main (int argc, char** argv)
 				printf("c'est plus grand\n");
 			else
 				printf ("Bravo vous avez trouvez le numero Mystere\n");
-				printf ("Vous avez mis : %d coups pour reussir");
-			i++	
 			} while (NombreMystere != NombreSaisi);
 		}		
 		// On demande si il veut continuer la partie	
@@ -60,4 +56,4 @@ int main (int argc, char** argv)
    	return (0);
 }
 
-  
+ 
