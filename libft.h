@@ -6,7 +6,7 @@
 /*   By: pakucera <pakucera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 13:40:50 by pakucera          #+#    #+#             */
-/*   Updated: 2021/12/22 13:26:20 by pakucera         ###   ########.fr       */
+/*   Updated: 2021/12/22 13:30:05 by pakucera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,5 @@ int		ft_tolower(int ch);
 char	*ft_strdup(const char *s1);
 void	*ft_calloc(size_t count, size_t size);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
-char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif
