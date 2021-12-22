@@ -5,10 +5,11 @@
 #                                                     +:+ +:+         +:+      #
 #    By: pakucera <pakucera@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/11/01 15:33:28 by grenaud-          #+#    #+#              #
-#    Updated: 2021/12/22 12:44:31 by pakucera         ###   ########.fr        #
+#    Created: 2021/12/22 13:25:55 by pakucera          #+#    #+#              #
+#    Updated: 2021/12/22 13:25:56 by pakucera         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
 
 SRC_DIR		=	./
 
@@ -35,6 +36,7 @@ SRCS		=	ft_atoi.c\
 				ft_strrchr.c\
 				ft_tolower.c\
 				ft_toupper.c\
+				ft_substr.c\
 
 OBJS        =	${SRCS:.c=.o}
 
