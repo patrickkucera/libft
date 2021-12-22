@@ -6,7 +6,7 @@
 #    By: pakucera <pakucera@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/22 13:25:55 by pakucera          #+#    #+#              #
-#    Updated: 2021/12/22 14:01:47 by pakucera         ###   ########.fr        #
+#    Updated: 2021/12/22 14:14:16 by pakucera         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,6 @@ SRCS		=	ft_atoi.c\
 				ft_strrchr.c\
 				ft_tolower.c\
 				ft_toupper.c\
-				
 				ft_substr.c\
 				ft_strjoin.c\
 				ft_strtrim.c\
