@@ -6,7 +6,7 @@
 /*   By: pakucera <pakucera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/22 14:09:23 by pakucera          #+#    #+#             */
-/*   Updated: 2021/12/22 14:09:42 by pakucera         ###   ########.fr       */
+/*   Updated: 2021/12/22 14:32:57 by pakucera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,14 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	ssize_t	i;
+	unsigned int	i;
 
+	if (!s || !f)
+		return ;
 	i = 0;
-	if (s)
+	while (s[i])
 	{
-		while (s[i])
-		{
-			f(i, s + i);
-			i++;
-		}
+		(*f)(i, s + i);
+		i++;
 	}
 }

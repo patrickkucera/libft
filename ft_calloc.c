@@ -6,7 +6,7 @@
 /*   By: pakucera <pakucera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 17:53:33 by pakucera          #+#    #+#             */
-/*   Updated: 2021/11/23 17:53:43 by pakucera         ###   ########.fr       */
+/*   Updated: 2021/12/22 14:24:41 by pakucera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	void	*rtn;
+	void	*pt;
 
-	rtn = malloc(size * count);
-	if (!rtn)
-		return (NULL);
-	ft_bzero(rtn, count);
-	return (rtn);
+	pt = malloc(count * size);
+	if (pt == NULL)
+		return (pt);
+	ft_bzero(pt, count * size);
+	return (pt);
 }
