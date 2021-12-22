@@ -6,7 +6,7 @@
 /*   By: pakucera <pakucera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 12:11:42 by pakucera          #+#    #+#             */
-/*   Updated: 2021/11/17 14:48:44 by pakucera         ###   ########.fr       */
+/*   Updated: 2021/12/22 13:01:04 by pakucera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,29 +16,21 @@
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	char	*s;
-	size_t	len_dst;
-	size_t	res;
-	size_t	len_src;
 	size_t	i;
+	size_t	dsize;
 
-	s = (char *)src;
-	len_dst = ft_strlen(dst);
-	len_src = ft_strlen(s);
-	res = 0;
-	i = 0;
-	if (size > len_dst)
-		res = len_src + len_dst;
-	else
-		res = len_src + size;
-	while (s[i] && (len_dst + 1) < size)
+	dsize = 0;
+	while (dst[dsize] != '\0' && dsize < dstsize)
+		dsize++;
+	i = dsize;
+	while (src[dsize - i] && dsize + 1 < dstsize)
 	{
-		dst[len_dst] = s[i];
-		len_dst++;
-		i++;
+		dst[dsize] = src[dsize - i];
+		dsize++;
 	}
-	dst[len_dst] = '\0';
-	return (res);
+	if (i < dstsize)
+		dst[dsize] = '\0';
+	return (i + ft_strlen(src));
 }
